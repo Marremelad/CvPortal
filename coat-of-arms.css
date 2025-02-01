@@ -1,0 +1,15 @@
+.coat-of-arms {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.coat-of-arms-container {
+    display: grid;
+    grid-template-columns: 400px;
+    margin: 20px;
+}

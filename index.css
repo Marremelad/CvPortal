@@ -1,0 +1,41 @@
+﻿.title {
+    display: flex;
+    min-height: 60vh;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: min(5vh);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 23vw;
+    margin-bottom: min(10vh);
+}
+
+.link-icons {
+    min-height: 5rem;
+    width: 100%;
+    max-width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: min(5vh);
+}
+
+.link-icons a {
+    font-size: 3rem;
+}
+
+.download-cv-button {
+    color: #efefef;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #efefef;
+    padding: 0.5rem 1rem;
+}
+
