@@ -2,12 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /*font-family: "UnifrakturCook", serif;*/
-    font-family: "MedievalSharp", serif;
-    color: #efefef;
 }
 
 
+body {
+    background-color: #1b191a;
+    text-align: center;
+    line-height: 1.5;
+    font-family: "MedievalSharp", serif;
+}
 
 header {
     display: flex;
@@ -36,27 +39,21 @@ main {
     /*background-color: beige;*/
     /*display: flex;*/
     /*flex-direction: column;*/
-    /*min-height: 80vh;*/
-    /*margin-top: 10vh;*/
+    min-height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     /*color: #efefef;*/
 }
 
 footer {
     /*background-color: skyblue;*/
-    height: 10vh;
-}
-
-h1 {
-    width: 1000px;
     color: #efefef;
-    margin-top: 40vh;
-}
-
-body {
-    background-color: #1b191a;
-    text-align: center;
-    line-height: 1.5;
-    /*height: 3000px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 10vh;
+    font-size: 1.5rem;
 }
 
 a {

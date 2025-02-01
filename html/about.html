@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/coat-of-arms.css">
     <link rel="stylesheet" href="../css/hamburger-menu.css">
     <link rel="stylesheet" href="../css/modal-popup.css">
@@ -18,7 +25,7 @@
 </head>
 <body>
 
-    <img class="coat-of-arms" src="../images/MauricioCoatOfArmsTextTop.png" alt="">
+
     <header>
         <a href="#sidebar">
             <div id="hamburger-menu" class="hamburger-menu">
@@ -28,36 +35,109 @@
             </div>
         </a>
 
-        <div id="sidebar" class="sidebar">
-            <a href="#" class="close">&times;</a>
+        <nav id="sidebar" class="sidebar">
+            <a href="#" class="close-sidebar-internal">
+                &times;
+            </a>
+
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>CV</li>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active" href="about.html">
+                        About Me
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cv.html">
+                        CV
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
             </ul>
-        </div>
+        </nav>
         <a href="#" class="close-sidebar"></a>
     </header>
 
     <main>
-        <div class="title">
-            <h1>About Me</h1>
+        <img class="coat-of-arms" src="../images/MauricioCoatOfArmsTextTop.png" alt="">
+
+        <div class="title-container">
+            <h1 class="title-text">About Me!</h1>
         </div>
 
-        <div class="test-div">Hello</div>
-        <div class="test-div">Hello</div>
-        <div class="test-div">Hello</div>
-        <div class="test-div">Hello</div>
-        <div class="test-div">Hello</div>
-        <div class="test-div">Hello</div>
-        <div class="test-div">Hello</div>
-        <div class="test-div">Hello</div>
+        <div class="technologies">
+            <div class="technology-icons">
+                <a href="#dot-net-popup">
+                    <div class="dot-net-icon">.NET</div>
+                </a>
+                <div id="dot-net-popup" class="popup">
+                    <a href="#" class="close">&times;</a>
+                    <h2>.NET</h2>
+                    <p>.NET is a Microsoft framework for building applications using C#, VB.NET, and F#. It provides a large library for web, desktop, and mobile development, simplifying tasks like database access and UI design.
+                    </p>
+                </div>
+                <a href="#" class="close-popup"></a>
+
+                <a href="#html-popup">
+                    <i class="fa-brands fa-html5"></i>
+                </a>
+                <div id="html-popup" class="popup">
+                    <a href="#" class="close">&times;</a>
+                    <h2>HTML5</h2>
+                    <p>HTML5 is the latest version of the markup language for structuring web content. It adds new elements for multimedia, improved form controls, and better support for web applications, making websites more interactive and accessible across devices.
+                    </p>
+                </div>
+                <a href="#" class="close-popup"></a>
+
+                <a href="#css-popup">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </a>
+                <div id="css-popup" class="popup">
+                    <a href="#" class="close">&times;</a>
+                    <h2>CSS 3</h2>
+                    <p>CSS 3 is the latest version of the Cascading Style Sheets language used for styling web pages. It introduces new features like animations, transitions, and flexible box layouts, allowing for more dynamic and responsive designs.
+                    </p>
+                </div>
+                <a href="#" class="close-popup"></a>
+
+                <a href="#java-script-popup">
+                    <i class="fa-brands fa-js"></i>
+                </a>
+                <div id="java-script-popup" class="popup">
+                    <a href="#" class="close">&times;</a>
+                    <h2>Javascript</h2>
+                    <p>JavaScript is a versatile programming language that enables dynamic behavior on websites. It allows for interactive elements, real-time updates, and user-driven actions, making web pages more lively and flexible.
+                    </p>
+                </div>
+                <a href="#" class="close-popup"></a>
+            </div>
+        </div>
     </main>
 
 
 
     <footer>
-        <p>Footer</p>
+        <div class="copy-right-symbol">
+            <p>C</p>
+        </div>
+        <p class="copy-right-text">Created by Mauricio Corte</p>
     </footer>
 </body>
 </html>

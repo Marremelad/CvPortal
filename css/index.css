@@ -1,22 +1,31 @@
-﻿.title {
+﻿.title-container {
     display: flex;
-    min-height: 60vh;
+    min-height: 20vh;
     font-size: 2rem;
     justify-content: center;
     text-align: center;
     margin-bottom: min(5vh);
 }
 
-.contact {
+.title-text {
+    width: 1000px;
+    color: #efefef;
+}
+
+.tech-stack-text {
+    color: #efefef;
+}
+
+.technologies {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 23vw;
-    margin-bottom: min(10vh);
+    /*visibility: hidden;*/
 }
 
-.link-icons {
+.technology-icons {
     min-height: 5rem;
     width: 100%;
     max-width: 20rem;
@@ -27,15 +36,80 @@
     margin-bottom: min(5vh);
 }
 
-.link-icons a {
-    font-size: 3rem;
+.dot-net-icon {
+    height: 2.625rem;
+    width: 2.625rem;
+    color: #b0afaf;
+    background-color: #442a9d;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
 }
 
-.download-cv-button {
-    color: #efefef;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: 1px solid #efefef;
-    padding: 0.5rem 1rem;
+.technology-icons i {
+    font-size: 3rem;
+    transition: opacity 0.3s;
 }
+
+.html5-icon {
+    color: #a83d22;
+}
+
+.css3-icon {
+    color: #267099;
+}
+
+.javascript-icon {
+    color: #b4a319;
+}
+
+.dot-net-icon:hover {
+    opacity: 0.3;
+}
+
+.technology-icons i:hover {
+    opacity: 0.3;
+}
+
+.copy-right-symbol {
+    border: 1px solid #efefef;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-right-symbol p {
+    margin-top: 0.15625rem;
+}
+
+/*.download-cv-button {*/
+/*    color: #efefef;*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: bold;*/
+/*    border: 1px solid #efefef;*/
+/*    border-radius: 2px;*/
+/*    padding: 0.5rem 1rem;*/
+/*    cursor: pointer;*/
+/*    user-select: none;*/
+/*    transition: color 0.5s, background-color 0.5s, opacity 0.5s;*/
+/*}*/
+
+/*.download-cv-button:hover {*/
+/*    background-color: #efefef;*/
+/*    color: #1b191a;*/
+/*    opacity: 0.9;*/
+/*}*/
+
+
+
+
+
 

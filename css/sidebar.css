@@ -51,8 +51,25 @@
 .sidebar ul {
     color: #efefef;
     list-style: none;
+    font-size: 1.5rem;
 }
 
 .sidebar li {
     margin-top: 50px;
+    transition: opacity 0.3s;
+}
+
+.sidebar li:hover {
+    opacity: 0.3;
+}
+
+.sidebar a:target {
+    color: green;
+}
+
+.active {
+    /*color: #a62b2b;*/
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    padding: 0 0.3125rem;
 }
