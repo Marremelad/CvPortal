@@ -1,0 +1,44 @@
+﻿.down-arrow {
+    height: 50px;
+    /*background-color: red;*/
+    margin-bottom: 20vh;
+}
+
+.information-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.information-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    min-width: 1fr;
+}
+
+.information-container div:nth-child(even) {
+    background-color: #efefef;
+}
+
+.information-container div p {
+    width: 15em;
+    font-size: 1.4rem;
+    font-family: "Crimson Pro", serif;
+}
+
+.information-container div img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.tank-round {
+    object-position: center 40%;
+}
+
+@media (max-width: 800px) {
+    .information-container {
+        grid-template-columns: 1fr; /* Switch to a single column */
+    }
+}

@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     background-color: #1b191a;
@@ -29,12 +33,6 @@ header {
 
 }
 
-/*header:hover {*/
-/*    background-color: #1b191a;*/
-/*    opacity: 1;*/
-/*    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1);*/
-/*}*/
-
 main {
     /*background-color: beige;*/
     /*display: flex;*/
@@ -42,7 +40,7 @@ main {
     min-height: 80vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    /*color: #efefef;*/
+    color: #efefef;
 }
 
 footer {
@@ -60,6 +58,35 @@ a {
     text-decoration: none;
     color: #efefef;
 }
+
+.title-container {
+    display: flex;
+    min-height: 20vh;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: min(5vh);
+}
+
+.title-text {
+    width: 1000px;
+    color: #efefef;
+}
+
+.copy-right-symbol {
+    border: 1px solid #efefef;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-right-symbol p {
+    margin-top: 0.15625rem;
+}
+
 
 
 

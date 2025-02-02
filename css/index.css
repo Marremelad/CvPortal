@@ -1,19 +1,18 @@
-﻿.title-container {
+﻿.tech-stack-button-container {
     display: flex;
-    min-height: 20vh;
-    font-size: 2rem;
     justify-content: center;
-    text-align: center;
-    margin-bottom: min(5vh);
 }
 
-.title-text {
-    width: 1000px;
+.tech-stack-button {
     color: #efefef;
-}
-
-.tech-stack-text {
-    color: #efefef;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    /*transition: color 0.5s, background-color 0.5s, opacity 0.5s;*/
 }
 
 .tech-stack {
@@ -26,8 +25,19 @@
     margin-bottom: min(5vh);
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s;
 }
 
+.remove-tech-stack-button {
+    display: none;
+}
+
+.display-tech-stack {
+    opacity: 1;
+    visibility: visible;
+}
 
 .dot-net-icon {
     height: 2.625rem;
@@ -44,7 +54,7 @@
     transition: opacity 0.3s;
 }
 
-.tech-stack i {
+#tech-stack i {
     font-size: 3rem;
     transition: opacity 0.3s;
 }
@@ -65,24 +75,9 @@
     opacity: 0.3;
 }
 
-.tech-stack i:hover {
+#tech-stack i:hover {
     opacity: 0.3;
 }
-
-.copy-right-symbol {
-    border: 1px solid #efefef;
-    border-radius: 1rem;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.copy-right-symbol p {
-    margin-top: 0.15625rem;
-}
-
 /*.download-cv-button {*/
 /*    color: #efefef;*/
 /*    font-size: 1.5rem;*/
