@@ -16,25 +16,18 @@
     color: #efefef;
 }
 
-.technologies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 23vw;
-    /*visibility: hidden;*/
-}
-
-.technology-icons {
+.tech-stack {
     min-height: 5rem;
-    width: 100%;
     max-width: 20rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: min(5vh);
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .dot-net-icon {
     height: 2.625rem;
@@ -51,7 +44,7 @@
     transition: opacity 0.3s;
 }
 
-.technology-icons i {
+.tech-stack i {
     font-size: 3rem;
     transition: opacity 0.3s;
 }
@@ -72,7 +65,7 @@
     opacity: 0.3;
 }
 
-.technology-icons i:hover {
+.tech-stack i:hover {
     opacity: 0.3;
 }
 
