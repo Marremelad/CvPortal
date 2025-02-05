@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .personal-information p {
@@ -32,19 +32,20 @@
     display: flex;
     margin-bottom: 5rem;
     justify-content: center;
-    align-items: center;
-    gap: 5rem;
-}
-
-.employment-and-assignments-and-references-container h2, .education-container h2, .languages-container h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    align-items: start;
+    gap: 17rem;
 }
 
 .education-and-languages-container {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    align-items: center;
+    gap: 17rem;
+}
+
+.employment-and-assignments-and-references-container h2, .education-and-languages-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .information-container {
@@ -52,14 +53,14 @@
     flex-direction: column;
 }
 
-.information-container > div {
+.information-container > article {
     gap: 2rem;
     margin-bottom: 2rem;
-
 }
 
 .information-container p  {
     font-size: 1.5rem;
     font-family: "Crimson Pro", serif;
+    width: 20rem;
 }
 
