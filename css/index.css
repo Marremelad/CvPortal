@@ -12,7 +12,11 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     user-select: none;
-    /*transition: color 0.5s, background-color 0.5s, opacity 0.5s;*/
+    transition: opacity 0.5s;
+}
+
+.tech-stack-button:hover {
+    opacity: 0.5;
 }
 
 .tech-stack {
@@ -54,11 +58,6 @@
     transition: opacity 0.3s;
 }
 
-#tech-stack i {
-    font-size: 3rem;
-    transition: opacity 0.3s;
-}
-
 .html5-icon {
     color: #a83d22;
 }
@@ -75,27 +74,14 @@
     opacity: 0.3;
 }
 
+#tech-stack i {
+    font-size: 3rem;
+    transition: opacity 0.3s;
+}
+
 #tech-stack i:hover {
     opacity: 0.3;
 }
-/*.download-cv-button {*/
-/*    color: #efefef;*/
-/*    font-size: 1.5rem;*/
-/*    font-weight: bold;*/
-/*    border: 1px solid #efefef;*/
-/*    border-radius: 2px;*/
-/*    padding: 0.5rem 1rem;*/
-/*    cursor: pointer;*/
-/*    user-select: none;*/
-/*    transition: color 0.5s, background-color 0.5s, opacity 0.5s;*/
-/*}*/
-
-/*.download-cv-button:hover {*/
-/*    background-color: #efefef;*/
-/*    color: #1b191a;*/
-/*    opacity: 0.9;*/
-/*}*/
-
 
 
 

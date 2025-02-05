@@ -62,7 +62,7 @@ a {
 .title-container {
     display: flex;
     min-height: 20vh;
-    font-size: 2rem;
+    font-size: 2em;
     justify-content: center;
     text-align: center;
     margin-bottom: min(5vh);
@@ -83,8 +83,38 @@ a {
     align-items: center;
 }
 
+.contact-icons i {
+    font-size: 3rem;
+    transition: opacity 0.3s;
+}
+
+.contact-icons i:hover {
+    opacity: 0.3;
+}
+
+.linkedin-icon {
+    color: #267099;
+}
+
+.github-icon {
+    color: #b0afaf;
+}
+
+.mail-icon {
+    color: #a83d22;
+}
+
 .copy-right-symbol p {
     margin-top: 0.15625rem;
+}
+
+.down-arrow {
+    height: 50px;
+    margin-bottom: 30vh;
+}
+
+.down-arrow p {
+    font-size: 5rem;
 }
 
 

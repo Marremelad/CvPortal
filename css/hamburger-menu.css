@@ -1,6 +1,14 @@
+.hamburger-menu {
+    transition: opacity 0.5s;
+}
+
 .hamburger-menu div{
     background-color: #efefef;
     width: 30px;
     height: 3px;
     margin: 6px 0;
+}
+
+.hamburger-menu:hover {
+    opacity: 0.5;
 }

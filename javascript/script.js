@@ -1,15 +1,21 @@
-﻿const button = document.querySelector("#tech-stack-button");
+﻿const techStackButton = document.querySelector("#tech-stack-button");
 const techStack = document.querySelector("#tech-stack");
-const anchor = document.querySelector("#tech-stack-anchor")
 
+const contactMeButton = document.querySelector("#contact-me-button");
+const contactIcons = document.querySelector("#contact-icons");
+const contactMeText = document.querySelector("#contact-me-text");
 
-anchor.addEventListener("click", (event) => {
-    event.preventDefault()
-})
-button.addEventListener("click", () => {
-    button.classList.add("remove-tech-stack-button");
-    techStack.classList.add("display-tech-stack");
-});
+if (techStackButton && techStack) {
+    techStackButton.addEventListener("click", () => {
+        techStackButton.classList.add("remove-tech-stack-button");
+        techStack.classList.add("display-tech-stack");
+    });
+}
 
-// button.style.display = "none"; // Hide the button
-// techStack.style.visibility = "visible"; // Show the div with the icons
+if (contactMeButton && contactIcons && contactMeText) {
+    contactMeButton.addEventListener("click", () => {
+        contactMeText.classList.add("remove-contact-me-text");
+        contactMeButton.classList.add("remove-contact-me-button");
+        contactIcons.classList.add("display-contact-icons");
+    });
+}
