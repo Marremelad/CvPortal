@@ -1,0 +1,597 @@
+﻿/*---------- General ----------*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1b191a;
+    text-align: center;
+    line-height: 1.5;
+    font-family: "MedievalSharp", serif;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    padding-right: 1.5rem;
+    transition: box-shadow 1s, background-color 1s, opacity 0.15s;
+}
+
+main {
+    min-height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    color: #efefef;
+}
+
+footer {
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 10vh;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+.title-container {
+    display: flex;
+    min-height: 20vh;
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: min(5vh);
+}
+
+.title-text {
+    width: 1000px;
+    color: #efefef;
+}
+
+.copy-right-symbol {
+    border: 1px solid #efefef;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons i {
+    font-size: 3rem;
+    transition: opacity 0.3s;
+}
+
+.contact-icons i:hover {
+    opacity: 0.3;
+}
+
+.linkedin-icon {
+    color: #267099;
+}
+
+.github-icon {
+    color: #b0afaf;
+}
+
+.mail-icon {
+    color: #a83d22;
+}
+
+.copy-right-symbol p {
+    margin-top: 0.15625rem;
+}
+
+.down-arrow {
+    height: 50px;
+    margin-bottom: 30vh;
+}
+
+.down-arrow p {
+    font-size: 5rem;
+}
+
+/*---------- Coat Of Arms ----------*/
+
+.coat-of-arms {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.coat-of-arms-container {
+    display: grid;
+    grid-template-columns: 400px;
+    margin: 20px;
+}
+
+
+/*---------- Hamburger Menu ----------*/
+
+.hamburger-menu {
+    transition: opacity 0.5s;
+}
+
+.hamburger-menu div{
+    background-color: #efefef;
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+}
+
+.hamburger-menu:hover {
+    opacity: 0.5;
+}
+
+/*---------- Sidebar  ----------*/
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    background-color: #1b191a;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.sidebar:target {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.close-sidebar {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: default;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.sidebar:target + .close-sidebar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.close-sidebar-internal {
+    position: absolute;
+    left: 15px;
+    font-size: 2em;
+    transition: color 0.5s;
+}
+
+.close-sidebar-internal:hover {
+    color: #a62b2b;
+}
+
+.sidebar ul {
+    color: #efefef;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.sidebar li {
+    margin-top: 50px;
+    transition: opacity 0.3s;
+}
+
+.sidebar li:hover {
+    opacity: 0.3;
+}
+
+.sidebar a:target {
+    color: green;
+}
+
+.active {
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    padding: 0 0.3125rem;
+}
+
+/*---------- Modal Popup ----------*/
+
+.popup {
+    position: fixed;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 0.125rem;
+    top: 50%;
+    left: 50%;
+    color: #1b191a;
+    transform: translate(-50%, -50%);
+    background-color: #efefef;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s, visibility 0s linear .5s;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-family: "Crimson Pro", serif;
+    /*font-weight: bold;*/
+}
+
+.popup:target {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.popup .close {
+    position: absolute;
+    right: 5px;
+    top: -17px;
+    padding: 5px;
+    color: #000;
+    transition: color .3s;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 700;
+    font-family: "MedievalSharp", serif;
+}
+
+.popup .close:hover {
+    color: #a62b2b;
+}
+
+.close-popup {
+    background-color: rgba(0,0,0,.7);
+    cursor: default;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility 0s linear .5s;
+}
+
+.popup:target + .close-popup {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+/*---------- Index ----------*/
+
+.tech-stack-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tech-stack-button {
+    color: #efefef;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.5s;
+}
+
+.tech-stack-button:hover {
+    opacity: 0.5;
+}
+
+.tech-stack {
+    min-height: 5rem;
+    max-width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: min(5vh);
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s;
+}
+
+.remove-tech-stack-button {
+    display: none;
+}
+
+.display-tech-stack {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dot-net-icon {
+    height: 2.625rem;
+    width: 2.625rem;
+    color: #b0afaf;
+    background-color: #442a9d;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.html5-icon {
+    color: #a83d22;
+}
+
+.css3-icon {
+    color: #267099;
+}
+
+.javascript-icon {
+    color: #b4a319;
+}
+
+.dot-net-icon:hover {
+    opacity: 0.3;
+}
+
+#tech-stack i {
+    font-size: 3rem;
+    transition: opacity 0.3s;
+}
+
+#tech-stack i:hover {
+    opacity: 0.3;
+}
+
+/*---------- About ----------*/
+
+.about-information-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-information-container > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    min-width: 1fr;
+}
+
+.about-information-container > article:nth-child(even) {
+    background-color: #efefef;
+}
+
+.about-information-container article p {
+    max-width: 15em;
+    font-size: 1.4rem;
+    font-family: "Crimson Pro", serif;
+}
+
+.about-information-container article img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.tank-round-image {
+    object-position: center 40%;
+}
+
+.contact-me-article {
+    flex-direction: column;
+}
+
+.contact-me-text {
+    position: relative;
+    top: 1.8rem;
+}
+
+.contact-me-button {
+    position: relative;
+    top: 3em;
+    color: #efefef;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.5s;
+}
+
+.contact-me-button:hover {
+    opacity: 0.5;
+}
+
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 15rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s;
+}
+
+.remove-contact-me-text {
+    display: none;
+}
+
+.remove-contact-me-button {
+    display: none;
+}
+
+.display-contact-icons {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 700px) {
+    .about-information-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*---------- Projects ----------*/
+
+
+/*---------- CV ----------*/
+
+.personal-information-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.personal-information p {
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: "Crimson Pro", serif;
+}
+
+.cv-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3rem solid #efefef;
+}
+
+.cv-picture {
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+}
+
+.employment-and-assignments-and-references-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: start;
+    gap: 5rem 9rem;
+}
+
+.education-and-languages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem 9rem;
+}
+
+.employment-and-assignments-and-references-container h2, .education-and-languages-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cv-information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+}
+
+.cv-information-container > article {
+    margin-bottom: 2rem;
+}
+
+.cv-information-container p  {
+    font-size: 1.5rem;
+    font-family: "Crimson Pro", serif;
+    max-width: 20rem;
+}
+
+@media (max-width: 510px) {
+    .cv-picture-container {
+        border-width: 2rem;
+    }
+
+    .cv-picture {
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .personal-information p {
+        font-size: 1.2rem;
+    }
+}
+
+/*---------- Contact ----------*/
+
+.contact-title-text {
+    width: 1500px;
+}
+
+.contact-contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 15rem;
+    transition: opacity 3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-contact-icons i {
+    font-size: 3rem;
+    transition: opacity 0.3s;
+}
+
+.contact-contact-icons i:hover {
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

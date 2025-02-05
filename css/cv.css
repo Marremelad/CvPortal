@@ -48,17 +48,17 @@
     margin-bottom: 1rem;
 }
 
-.information-container {
+.about-information-container {
     display: flex;
     flex-direction: column;
 }
 
-.information-container > article {
+.about-information-container > article {
     gap: 2rem;
     margin-bottom: 2rem;
 }
 
-.information-container p  {
+.about-information-container p  {
     font-size: 1.5rem;
     font-family: "Crimson Pro", serif;
     width: 20rem;
