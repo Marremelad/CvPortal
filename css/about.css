@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.information-container > div {
+.information-container > article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,17 +11,17 @@
     min-width: 1fr;
 }
 
-.information-container > div:nth-child(even) {
+.information-container > article:nth-child(even) {
     background-color: #efefef;
 }
 
-.information-container div p {
+.information-container article p {
     max-width: 15em;
     font-size: 1.4rem;
     font-family: "Crimson Pro", serif;
 }
 
-.information-container div img {
+.information-container article img {
     height: 80%;
     width: 80%;
     object-fit: cover;
@@ -31,7 +31,7 @@
     object-position: center 40%;
 }
 
-.contact-me-div {
+.contact-me-article {
     flex-direction: column;
 }
 
