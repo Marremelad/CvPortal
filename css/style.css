@@ -554,7 +554,7 @@ a {
 /*---------- Contact ----------*/
 
 .contact-title-text {
-    width: 1500px;
+    width: 1250px;
 }
 
 .contact-contact-icons {
@@ -576,6 +576,12 @@ a {
 
 .contact-contact-icons i:hover {
     opacity: 0.3;
+}
+
+@media (max-width: 500px) {
+    .contact-title-text {
+        font-size: 1.5em;
+    }
 }
 
 
