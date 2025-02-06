@@ -377,7 +377,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.about-information-container > article {
+.about-information-container > article, .about-information-container figure {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,7 +385,7 @@ a {
     min-width: 1fr;
 }
 
-.about-information-container > article:nth-child(even) {
+.about-information-container > figure:nth-child(even) {
     background-color: #efefef;
 }
 
@@ -395,7 +395,7 @@ a {
     font-family: "Crimson Pro", serif;
 }
 
-.about-information-container article img {
+.about-information-container figure img {
     height: 80%;
     width: 80%;
     object-fit: cover;
