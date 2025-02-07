@@ -503,15 +503,17 @@ a {
     object-fit: cover;
 }
 
+.project-info-container {
+    width: 30rem;
+}
+
 .project-name {
     font-size: 3rem;
-    min-width: 30rem;
 }
 
 .project-description {
     font-family: "Crimson Pro", serif;
-    width: 30rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 3vh;
 }
 
@@ -553,9 +555,12 @@ a {
         width: 17em;
     }
 
+    .project-info-container {
+        width: 20rem;
+    }
+
     .project-name {
         font-size: 2rem;
-        min-width: 20rem;
     }
 }
 /*---------- CV ----------*/
