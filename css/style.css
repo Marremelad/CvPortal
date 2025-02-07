@@ -283,6 +283,13 @@ a {
     transition-delay: 0s;
 }
 
+@media (max-width: 510px) {
+    .popup .close {
+        font-size: 1.5em;
+        right: 0;
+    }
+}
+
 /*---------- Index ----------*/
 
 .tech-stack-button-container {
@@ -523,7 +530,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30rem;
+    min-width: 30rem;
 }
 
 .cv-information-container > article {
@@ -551,7 +558,7 @@ a {
     }
 
     .cv-information-container {
-        width: 20rem;
+        min-width: 20rem;
     }
 }
 
@@ -582,7 +589,7 @@ a {
     opacity: 0.3;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
     .contact-title-text {
         font-size: 1.5em;
     }
