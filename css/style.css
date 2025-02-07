@@ -549,6 +549,10 @@ a {
     .personal-information p {
         font-size: 1.2rem;
     }
+
+    .cv-information-container {
+        width: 20rem;
+    }
 }
 
 /*---------- Contact ----------*/
