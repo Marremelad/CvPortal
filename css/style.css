@@ -62,6 +62,7 @@ a {
 }
 
 .title-text {
+    /*width: 62.5em;*/
     width: 1000px;
     color: #efefef;
 }
@@ -102,12 +103,26 @@ a {
 }
 
 .down-arrow {
-    height: 50px;
-    margin-bottom: 30vh;
+    height: 5vh;
+    margin-bottom: 25vh;
 }
 
 .down-arrow p {
     font-size: 5rem;
+}
+
+@media (max-width: 510px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .title-text {
+        width: 300px;
+    }
+
+    .down-arrow {
+        margin-bottom: 5vh;
+    }
 }
 
 /*---------- Coat Of Arms ----------*/
@@ -553,6 +568,10 @@ a {
         width: 17rem;
     }
 
+    .personal-information-container {
+        margin-top: 25vh;
+    }
+
     .personal-information p {
         font-size: 1.2rem;
     }
@@ -592,6 +611,7 @@ a {
 @media (max-width: 510px) {
     .contact-title-text {
         font-size: 1.5em;
+        width: 300px;
     }
 }
 
