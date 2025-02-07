@@ -555,6 +555,7 @@ a {
 
     .project-name {
         font-size: 2rem;
+        min-width: 20rem;
     }
 }
 /*---------- CV ----------*/
