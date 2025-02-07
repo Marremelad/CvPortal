@@ -399,7 +399,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
     min-width: 1fr;
 }
 
@@ -409,13 +409,13 @@ a {
 
 .about-information-container article p {
     max-width: 15em;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-family: "Crimson Pro", serif;
 }
 
 .about-information-container figure img {
-    height: 80%;
-    width: 80%;
+    height: 85%;
+    width: 85%;
     object-fit: cover;
 }
 
@@ -483,7 +483,80 @@ a {
 
 /*---------- Projects ----------*/
 
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem 10rem;
+    margin-bottom: 10rem;
+}
 
+.project-image-container {
+    display: flex;
+    border: 2rem solid #efefef;
+}
+
+.project-image {
+    height: 35em;
+    width: 35em;
+    object-fit: cover;
+}
+
+.project-name {
+    font-size: 3rem;
+    min-width: 30rem;
+}
+
+.project-description {
+    font-family: "Crimson Pro", serif;
+    width: 30rem;
+    font-size: 1.7rem;
+    margin-bottom: 3vh;
+}
+
+.project-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.learn-more-button {
+    color: #efefef;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.5s;
+}
+
+.learn-more-button:hover {
+    opacity: 0.5;
+}
+
+.projects-github-icon {
+    font-size: 3rem;
+    transition: opacity 0.3s;
+}
+
+.projects-github-icon:hover {
+    opacity: 0.3;
+}
+
+@media (max-width: 650px) {
+    .project-image {
+        height: 17em;
+        width: 17em;
+    }
+
+    .project-name {
+        font-size: 2rem;
+    }
+}
 /*---------- CV ----------*/
 
 .personal-information-container {
@@ -491,7 +564,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
     margin-bottom: 10rem;
 }
 
@@ -505,12 +578,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3rem solid #efefef;
+    border: 2rem solid #efefef;
 }
 
 .cv-picture {
-    height: 25rem;
-    width: 25rem;
+    height: 25em;
+    width: 25em;
     object-fit: cover;
 }
 
@@ -555,13 +628,9 @@ a {
 }
 
 @media (max-width: 510px) {
-    .cv-picture-container {
-        border-width: 2rem;
-    }
-
     .cv-picture {
-        height: 17rem;
-        width: 17rem;
+        height: 17em;
+        width: 17em;
     }
 
     .personal-information-container {
