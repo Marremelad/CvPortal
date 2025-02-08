@@ -1,4 +1,4 @@
-﻿const audio = new Audio("/audio/dif.mp3");
+﻿const audio = new Audio("/CvPortal/audio/dif.mp3");
 
 const body = document.querySelector("body");
 
