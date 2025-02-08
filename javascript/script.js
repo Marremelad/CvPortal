@@ -1,4 +1,4 @@
-﻿const audio = new Audio("../audio/dif-sound.mp3");
+﻿const audio = new Audio("../audio/Dif.ogg");
 
 const body = document.querySelector("body");
 
@@ -12,7 +12,7 @@ const contactMeButton = document.querySelector("#contact-me-button");
 const contactIcons = document.querySelector("#contact-icons");
 const contactMeText = document.querySelector("#contact-me-text");
 
-copyRightSymbol.addEventListener("click", async() => {
+copyRightSymbol.addEventListener("click", async () => {
     body.classList.add("the-best-team-in-the-world");
     await audio.play();
 })
