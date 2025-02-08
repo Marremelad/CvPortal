@@ -52,6 +52,16 @@ a {
     color: #efefef;
 }
 
+.the-best-team-in-the-world {
+    background: linear-gradient(
+            to right,
+            #ffe708 0%, #ffe708 33.33%,
+            #dd151c 33.33%, #dd151c 66.66%,
+            #2066af 66.66%, #2066af 100%
+    );
+    border: 1rem solid #d7bc70;
+}
+
 .elite-message {
     position: fixed;
     top: 50%;
@@ -92,6 +102,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.copy-right-symbol:hover {
+    cursor: default;
 }
 
 .contact-icons i {
