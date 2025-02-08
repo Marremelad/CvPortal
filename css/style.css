@@ -58,11 +58,10 @@ a {
     font-size: 2em;
     justify-content: center;
     text-align: center;
-    margin-bottom: min(5vh);
+    margin-bottom: 5rem;
 }
 
 .title-text {
-    /*width: 62.5em;*/
     width: 1000px;
     color: #efefef;
 }
@@ -103,8 +102,8 @@ a {
 }
 
 .down-arrow {
-    height: 5vh;
-    margin-bottom: 25vh;
+    height: 10rem;
+    margin-bottom: 7rem;
 }
 
 .down-arrow p {
@@ -113,11 +112,15 @@ a {
 
 @media (max-width: 510px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .title-text {
         width: 300px;
+    }
+
+    .down-arrow {
+        margin-bottom: 2rem;
     }
 }
 
@@ -130,12 +133,12 @@ a {
     z-index: 0;
 }
 
-.coat-of-arms-container {
-    display: grid;
-    grid-template-columns: 400px;
-    margin: 20px;
+@media (max-width: 510px) {
+    .coat-of-arms {
+        height: 200px;
+        width: 200px;
+    }
 }
-
 
 /*---------- Hamburger Menu ----------*/
 
@@ -409,7 +412,7 @@ a {
 
 .about-information-container article p {
     max-width: 15em;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-family: "Crimson Pro", serif;
 }
 
@@ -488,19 +491,19 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5rem 10rem;
+    row-gap: 2rem;
     margin-bottom: 10rem;
 }
 
 .project-image-container {
     display: flex;
+    align-items: center;
     border: 2rem solid #efefef;
 }
 
 .project-image {
-    height: 35em;
-    width: 35em;
-    object-fit: cover;
+    width: 50em;
+    object-fit: contain;
 }
 
 .project-info-container {
@@ -549,10 +552,13 @@ a {
     opacity: 0.3;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 870px) {
+    .project-image-container {
+        border-width: 1rem;
+    }
+
     .project-image {
-        height: 17em;
-        width: 17em;
+        width: 20em;
     }
 
     .project-info-container {

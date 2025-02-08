@@ -1,4 +1,5 @@
-﻿const techStackButton = document.querySelector("#tech-stack-button");
+﻿
+const techStackButton = document.querySelector("#tech-stack-button");
 const techStack = document.querySelector("#tech-stack");
 
 const contactMeButton = document.querySelector("#contact-me-button");
