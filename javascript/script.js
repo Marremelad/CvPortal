@@ -1,4 +1,4 @@
-﻿const audio = new Audio("/audio/DIF.mp3");
+﻿const audio = new Audio("../audio/DIF.mp3");
 
 const body = document.querySelector("body");
 
