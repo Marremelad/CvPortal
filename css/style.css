@@ -299,8 +299,7 @@ a {
 
 @media (max-width: 510px) {
     .popup .close {
-        font-size: 1.5em;
-        right: 0;
+        display: none;
     }
 }
 
@@ -694,13 +693,6 @@ a {
         width: 300px;
     }
 }
-
-
-
-
-
-
-
 
 
 
