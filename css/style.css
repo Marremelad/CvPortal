@@ -52,6 +52,23 @@ a {
     color: #efefef;
 }
 
+.elite-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #efefef;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 2px;
+    font-size: 5rem;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.display-elite-message {
+    visibility: visible;
+}
+
 .title-container {
     display: flex;
     min-height: 20vh;
@@ -252,7 +269,6 @@ a {
     z-index: 1;
     font-size: 1.5rem;
     font-family: "Crimson Pro", serif;
-    /*font-weight: bold;*/
 }
 
 .popup:target {
@@ -572,7 +588,7 @@ a {
         font-size: 2rem;
     }
 }
-/*---------- CV ----------*/
+/*---------- Resumé ----------*/
 
 .personal-information-container {
     display: flex;
@@ -693,14 +709,3 @@ a {
         width: 300px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
