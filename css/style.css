@@ -116,7 +116,7 @@ a {
     }
 
     .title-text {
-        width: 300px;
+        width: 200px;
     }
 
     .down-arrow {
@@ -553,6 +553,10 @@ a {
 }
 
 @media (max-width: 870px) {
+
+    .projects-container {
+        margin-top: 10rem;
+    }
     .project-image-container {
         border-width: 1rem;
     }
@@ -646,7 +650,7 @@ a {
     }
 
     .personal-information-container {
-        margin-top: 25vh;
+        margin-top: 10rem;
     }
 
     .personal-information p {
