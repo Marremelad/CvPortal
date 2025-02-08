@@ -691,7 +691,6 @@ a {
 
 @media (max-width: 510px) {
     .contact-title-text {
-        font-size: 1.5em;
         width: 300px;
     }
 }
