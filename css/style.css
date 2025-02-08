@@ -59,7 +59,8 @@ a {
     transform: translate(-50%, -50%);
     color: #efefef;
     background: linear-gradient(to right, red, blue);
-    border-radius: 2px;
+    border-radius: 0.125rem;
+    padding: 2rem;
     font-size: 5rem;
     z-index: 10;
     visibility: hidden;

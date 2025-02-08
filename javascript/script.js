@@ -30,8 +30,7 @@ async function detect1337(event) {
     userInput += event.key;
 
     if (userInput.includes("1337")) {
-        userInput = userInput.slice(-4);
-
+        console.log(userInput);
         eliteMessage.classList.add("display-elite-message");
         await sleep(3500)
         eliteMessage.classList.remove("display-elite-message");
