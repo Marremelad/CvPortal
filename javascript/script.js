@@ -1,4 +1,4 @@
-﻿const audio = new Audio("../audio/Dif.ogg");
+﻿const audio = new Audio("https://github.com/Marremelad/AssetsAndImages/raw/main/Dif.ogg");
 
 const body = document.querySelector("body");
 
