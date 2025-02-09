@@ -452,6 +452,7 @@ a {
 
 .contact-me-article {
     flex-direction: column;
+    z-index: -1;
 }
 
 .contact-me-text {
@@ -724,8 +725,8 @@ a {
 .the-best-team-in-the-world {
     background: linear-gradient(
             to right,
-            #ffe708 0%, #ffe708 38%,  /* Yellow expands slightly */
-            #dd151c 38%, #dd151c 62%, /* Red is a bit wider */
+            #ffe708 0%, #ffe708 38%,
+            #dd151c 38%, #dd151c 62%,
             #2066af 62%, #2066af 100%
     );
     color: #030f28;
