@@ -1,0 +1,134 @@
+﻿/*---------- General ----------*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    line-height: 1.5;
+    font-family: serif;
+}
+
+header, footer {
+   display: none;
+}
+
+main {
+    min-height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    color: black;
+}
+
+.elite-message {
+   display: none;
+}
+
+.title-container {
+   display: none;
+}
+
+.title-text {
+    display: none;
+}
+
+.down-arrow {
+   display: none;
+}
+
+/*---------- Coat Of Arms ----------*/
+
+.coat-of-arms {
+   display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+/*---------- Resumé ----------*/
+
+.personal-information-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+    break-after: page;
+}
+
+.personal-information p {
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: "Crimson Pro", serif;
+}
+
+.cv-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+.cv-picture {
+    height: 25em;
+    width: 25em;
+    object-fit: cover;
+}
+
+.employment-and-assignments-and-references-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: start;
+    gap: 5rem 9rem;
+}
+
+.education-and-languages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem 9rem;
+}
+
+.employment-and-assignments-and-references-container h2, .education-and-languages-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cv-information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 30rem;
+}
+
+.cv-information-container > article {
+    margin-bottom: 2rem;
+}
+
+.cv-information-container p  {
+    font-size: 1.5rem;
+    font-family: "Crimson Pro", serif;
+    max-width: 20rem;
+}
+
+.employment-and-assignments,
+.references,
+.education,
+.languages
+{
+    break-before: page;
+}
+
+@page {
+    size: A4;
+}
