@@ -12,6 +12,7 @@ html {
 
 body {
     background-color: #1b191a;
+    color: #efefef;
     text-align: center;
     line-height: 1.5;
     font-family: "MedievalSharp", serif;
@@ -34,11 +35,9 @@ main {
     min-height: 80vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    color: #efefef;
 }
 
 footer {
-    color: #efefef;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,15 +51,9 @@ a {
     color: #efefef;
 }
 
-.the-best-team-in-the-world {
-    background: linear-gradient(
-            to right,
-            #ffe708 0%, #ffe708 33.33%,
-            #dd151c 33.33%, #dd151c 66.66%,
-            #2066af 66.66%, #2066af 100%
-    );
-    border: 1rem solid #d7bc70;
-}
+/*a:visited {*/
+/*    color: inherit;*/
+/*}*/
 
 .elite-message {
     position: fixed;
@@ -91,11 +84,11 @@ a {
 
 .title-text {
     width: 1000px;
-    color: #efefef;
 }
 
 .copy-right-symbol {
-    border: 1px solid #efefef;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 1rem;
     height: 2rem;
     width: 2rem;
@@ -231,6 +224,7 @@ a {
 }
 
 .close-sidebar-internal {
+    color: #efefef;
     position: absolute;
     left: 15px;
     font-size: 2em;
@@ -342,10 +336,10 @@ a {
 }
 
 .tech-stack-button {
-    color: #efefef;
     font-size: 1.5rem;
     font-weight: bold;
-    border: 1px solid #efefef;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 2px;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -436,7 +430,7 @@ a {
     min-width: 1fr;
 }
 
-.about-information-container > figure:nth-child(even) {
+.about-information-container > figure {
     background-color: #efefef;
 }
 
@@ -468,10 +462,10 @@ a {
 .contact-me-button {
     position: relative;
     top: 3em;
-    color: #efefef;
     font-size: 1.5rem;
     font-weight: bold;
-    border: 1px solid #efefef;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 2px;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -558,10 +552,10 @@ a {
 }
 
 .learn-more-button {
-    color: #efefef;
     font-size: 1.5rem;
     font-weight: bold;
-    border: 1px solid #efefef;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 2px;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -723,4 +717,48 @@ a {
     .contact-title-text {
         width: 300px;
     }
+}
+
+/*---------- Easter Egg ----------*/
+
+.the-best-team-in-the-world {
+    background: linear-gradient(
+            to right,
+            #ffe708 0%, #ffe708 38%,  /* Yellow expands slightly */
+            #dd151c 38%, #dd151c 62%, /* Red is a bit wider */
+            #2066af 62%, #2066af 100%
+    );
+    color: #030f28;
+    border: 1rem solid #d7bc70;
+}
+
+.the-best-team-in-the-world .sidebar {
+    background-color: #030f28;
+    border: 0.5rem solid #d7bc70;
+}
+
+.the-best-team-in-the-world i {
+    color: #030f28;
+}
+
+.the-best-team-in-the-world .dot-net-icon {
+    border: 2px solid #030f28;
+    background-color: transparent;
+    color: #030f28;
+}
+
+.the-best-team-in-the-world .about-information-container > figure {
+    background-color: #d7bc70;
+}
+
+.the-best-team-in-the-world .learn-more-button {
+    color: #030f28;
+}
+
+.the-best-team-in-the-world .footer-linkedin-link {
+    color: #030f28;
+}
+
+.the-best-team-in-the-world .project-image-container {
+    border-color: #d7bc70;
 }

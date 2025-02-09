@@ -1,6 +1,8 @@
 ﻿const audio = new Audio("https://github.com/Marremelad/AssetsAndImages/raw/main/DIF-Sound.mp3");
 
 const body = document.querySelector("body");
+const icons = document.querySelectorAll("i");
+const dotNetIcon = document.querySelector(".dot-net-icon");
 
 const copyRightSymbol = document.querySelector(".copy-right-symbol");
 const eliteMessage = document.querySelector(".elite-message");
