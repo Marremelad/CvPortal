@@ -4,9 +4,7 @@ const body = document.querySelector("body");
 
 const copyRightSymbol = document.querySelector(".copy-right-symbol");
 const elitePopup = document.querySelector("#elite-popup");
-// const eliteMessage = document.querySelector(".elite-message");
 const closeElitePopup = document.querySelector("#close-elite-popup");
-const externalCloseElitePopup = document.querySelector("#external-close-elite-popup");
 
 const techStackButton = document.querySelector("#tech-stack-button");
 const techStack = document.querySelector("#tech-stack");
@@ -19,10 +17,6 @@ copyRightSymbol.addEventListener("click", async () => {
     body.classList.add("the-best-team-in-the-world");
     await audio.play();
 })
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
 
 let userInput = "";
 async function detect1337(event) {
