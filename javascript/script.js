@@ -3,7 +3,10 @@
 const body = document.querySelector("body");
 
 const copyRightSymbol = document.querySelector(".copy-right-symbol");
-const eliteMessage = document.querySelector(".elite-message");
+const elitePopup = document.querySelector("#elite-popup");
+// const eliteMessage = document.querySelector(".elite-message");
+const closeElitePopup = document.querySelector("#close-elite-popup");
+const externalCloseElitePopup = document.querySelector("#external-close-elite-popup");
 
 const techStackButton = document.querySelector("#tech-stack-button");
 const techStack = document.querySelector("#tech-stack");
@@ -17,15 +20,17 @@ copyRightSymbol.addEventListener("click", async () => {
     await audio.play();
 })
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+let userInput = "";
 async function detect1337(event) {
     userInput += event.key;
 
     if (userInput.includes("1337")) {
         console.log(userInput);
-        eliteMessage.classList.add("display-elite-message");
-        await sleep(3500)
-        eliteMessage.classList.remove("display-elite-message");
-
+        elitePopup.classList.add("display-elite-popup");
         userInput = "";
     }
 
@@ -36,8 +41,12 @@ async function detect1337(event) {
 
 document.addEventListener("keydown", detect1337);
 
-let userInput = "";
 
+if (elitePopup) {
+    closeElitePopup.addEventListener("click", () => {
+        elitePopup.classList.remove("display-elite-popup")
+    })
+}
 
 if (techStackButton && techStack) {
     techStackButton.addEventListener("click", () => {
@@ -52,10 +61,6 @@ if (contactMeButton && contactIcons && contactMeText) {
         contactMeButton.classList.add("remove-contact-me-button");
         contactIcons.classList.add("display-contact-icons");
     });
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 
