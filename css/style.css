@@ -450,19 +450,15 @@ a {
     object-position: center 40%;
 }
 
-.contact-me-article {
+.contact-me-article-content {
+    margin-top: 8rem;
+    width: 20rem;
+    display: flex;
     flex-direction: column;
-    z-index: -1;
-}
-
-.contact-me-text {
-    position: relative;
-    top: 1.8rem;
+    align-items: center;
 }
 
 .contact-me-button {
-    position: relative;
-    top: 3em;
     font-size: 1.5rem;
     font-weight: bold;
     border-width: 2px;
@@ -472,6 +468,7 @@ a {
     cursor: pointer;
     user-select: none;
     transition: opacity 0.5s;
+    margin-top: 100px;
 }
 
 .contact-me-button:hover {
@@ -501,6 +498,12 @@ a {
 .display-contact-icons {
     opacity: 1;
     visibility: visible;
+}
+
+article:has(.display-contact-icons) {
+    .contact-me-article-content {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 700px) {
