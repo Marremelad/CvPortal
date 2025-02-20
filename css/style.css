@@ -51,20 +51,6 @@ a {
     color: #efefef;
 }
 
-.elite-message {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #efefef;
-    background: linear-gradient(to right, red, blue);
-    border-radius: 0.125rem;
-    padding: 2rem;
-    font-size: 5rem;
-    z-index: 10;
-    visibility: hidden;
-}
-
 .display-elite-message {
     visibility: visible;
 }
