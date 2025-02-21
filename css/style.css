@@ -51,10 +51,6 @@ a {
     color: #efefef;
 }
 
-.display-elite-message {
-    visibility: visible;
-}
-
 .title-container {
     display: flex;
     min-height: 20vh;
